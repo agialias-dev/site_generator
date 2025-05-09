@@ -17,11 +17,7 @@ class HTMLNode:
         return props_html 
 
     def __repr__(self):
-<<<<<<< HEAD
-        return f"HTMLNode({self.tag}, {self.value}, children:{self.children}, {self.props})"
-=======
         return f"HTMLNode({self.tag}, {self.value}, children: {self.children}, {self.props})"
->>>>>>> d381000 (Completed up to Chapter 2 Lesson 3.)
     
     def __eq__(self, other):
         if not isinstance(other, HTMLNode):
