@@ -52,4 +52,4 @@ class ParentNode(HTMLNode):
             raise ValueError("invalid HTML: no children")
         children_html = map(lambda child: child.to_html(), self.children)
         children_content = "".join(children_html)
-        return f"<{self.tag}>{children_content}</{self.tag}>"
+        return f"<{self.tag}{self.props_to_html()}>{children_content}</{self.tag}>"

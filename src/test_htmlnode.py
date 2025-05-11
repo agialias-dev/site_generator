@@ -53,5 +53,33 @@ class TestParentNode(unittest.TestCase):
         parent_node = ParentNode("div", [child_node])
         self.assertEqual(parent_node.to_html(), "<div><span><b>grandchild</b></span></div>")
 
+    def test_to_html_many_children(self):
+        node = ParentNode("p", [
+                LeafNode("b", "Bold text"),
+                LeafNode(None, "Normal text"),
+                LeafNode("i", "italic text"),
+                LeafNode(None, "Normal text")])
+        self.assertEqual(node.to_html(), "<p><b>Bold text</b>Normal text<i>italic text</i>Normal text</p>")
+
+    def test_headings(self):
+        node = ParentNode(
+            "h2",
+            [LeafNode("b", "Bold text"),
+                LeafNode(None, "Normal text"),
+                LeafNode("i", "italic text"),
+                LeafNode(None, "Normal text")])
+        self.assertEqual(node.to_html(), "<h2><b>Bold text</b>Normal text<i>italic text</i>Normal text</h2>")
+    
+    def test_to_html_no_tag(self):
+        with self.assertRaises(ValueError):
+            node = ParentNode(None, [LeafNode("span", "child")])
+            node.to_html()
+    
+    def test_to_html_no_children(self):
+        with self.assertRaises(ValueError):
+            node = ParentNode("div", None)
+            node.to_html()
+    
+    
 if __name__ == "__main__":
     unittest.main()
