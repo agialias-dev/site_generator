@@ -1,15 +1,10 @@
-from textnode import TextNode, TextType
-from htmlnode import HTMLNode, LeafNode, ParentNode
-from converters import text_node_to_html_node
+from textnode import *
+from htmlnode import *
+from converters import *
 
 def main():
-    textnode = TextNode("Anchor text.", TextType.LINK, "https://www.trollolol.lol")
-    htmlnode = HTMLNode("p", "monkeys enjoy swinging", "child", {"class": "prop", "href": "http://example.com"})
-    leafnode = LeafNode("b", "in the trees")
-    parentnode = ParentNode("div", [LeafNode("i", "all the time")])
-    
-    print(f"{textnode}\n{htmlnode.props_to_html()}\n{leafnode.to_html()}\n{parentnode.to_html()}")
-    print(text_node_to_html_node(textnode))
+    text = "This is **text** with an _italic_ word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)"
+    print(text_to_textnodes(text))
 
 if __name__ == "__main__":
     main()
