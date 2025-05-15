@@ -1,7 +1,7 @@
 import unittest
 from textnode import *
 from htmlnode import *
-from converters import *
+from inline_functions import *
 
 
 class TestTexttoHTML(unittest.TestCase):
