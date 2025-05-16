@@ -2,25 +2,26 @@ from textnode import *
 from htmlnode import *
 from inline_functions import *
 from block_functions import *
+from final_functions import *
 
 def main():
-    # This should be a quote block, but your code might classify it as a paragraph
-    mixed_quote = "> This is a quote\nThis line doesn't start with >"
+    md = "#Heading with no space\n"
 
-    # This should be paragraph, not an unordered list
-    mixed_list = "- This starts like a list\nBut this line doesn't"
+    md2 = "This   is   a   test\nfor   spacing."
 
-    # This should be paragraph, not an ordered list
-    mixed_ordered = "1. First item\nSecond item without number"
+    md3 = "  234. List item\n  2. Another item"
 
-    # This should be paragraph because the numbers don't increment properly
-    bad_ordered = "1. First item\n3. Third item"
+    md4 = "Not actually a quote\n> This is a quote"
 
-    print(f"{block_to_block_type(mixed_quote)} # Should be paragraph, not quote")
-    print(f"{block_to_block_type(mixed_list)} # Should be paragraph, not unordered_list")
-    print(f"{block_to_block_type(mixed_ordered)} # Should be paragraph, not ordered_list")
-    print(f"{block_to_block_type(bad_ordered)} # Should be paragraph, not ordered_list")
-    
+    html = markdown_to_html(md)
+    html2 = markdown_to_html(md2)
+    html3 = markdown_to_html(md3)
+    html4 = markdown_to_html(md4)
+
+    print(html.to_html())
+    print(html2.to_html())
+    print(html3.to_html())
+    print(html4.to_html())
 
 if __name__ == "__main__":
     main()

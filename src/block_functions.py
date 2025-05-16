@@ -34,7 +34,7 @@ def block_to_block_type(block):
             if not line.startswith("- "):
                 return BlockType.PAR
         return BlockType.ULIST
-    if block.startswith("1. "):
+    if re.match(r'^ *\d+\. '):
         i = 1
         for line in lines:
             if not line.startswith(f"{i}. "):
