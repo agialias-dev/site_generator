@@ -1,0 +1,32 @@
+2025-05-18 21:41:38,758 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-18 21:41:38,758 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-18 21:41:38,758 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-18 21:41:38,759 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-18 21:41:38,759 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public
+2025-05-18 21:41:38,760 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png:Zone.Identifier to /home/agialias/projects/site_generator/public
+2025-05-18 21:41:38,760 INFO : Task completed.
+2025-05-18 21:56:10,211 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-18 21:56:10,212 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-18 21:56:10,212 INFO : Deleting /home/agialias/projects/site_generator/public/tolkien.png
+2025-05-18 21:56:10,212 INFO : Deleting /home/agialias/projects/site_generator/public/tolkien.png:Zone.Identifier
+2025-05-18 21:56:10,212 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-18 21:56:10,213 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-18 21:56:10,213 INFO : entering recursion
+2025-05-18 21:56:10,213 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-18 21:56:10,215 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png:Zone.Identifier to /home/agialias/projects/site_generator/public/images
+2025-05-18 21:56:10,215 INFO : Task completed.
+2025-05-18 22:06:26,113 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-18 22:06:26,113 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-18 22:06:26,113 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-18 22:06:26,114 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-18 22:06:26,114 INFO : entering recursion
+2025-05-18 22:06:26,114 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-18 22:06:26,115 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png:Zone.Identifier to /home/agialias/projects/site_generator/public/images
+2025-05-18 22:06:26,115 INFO : Task completed.
+2025-05-18 22:07:06,784 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-18 22:07:06,785 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-18 22:07:06,785 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-18 22:07:06,785 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-18 22:07:06,785 INFO : entering recursion
+2025-05-18 22:07:06,785 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-18 22:07:06,786 INFO : Task completed.
