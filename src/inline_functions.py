@@ -107,3 +107,12 @@ def text_to_textnodes(text):
     output = split_nodes_link(output)
     output = split_nodes_image(output)
     return output
+
+def extract_title(markdown):
+    markdown_file = open(markdown, "r")
+    markdown_text = markdown_file.read()
+    markdown_file.close()
+    if re.match(r'^#{1}', markdown_text):
+        title = re.match(r'^#{1} .*', markdown_text)
+        return title.group(0)
+    raise ValueError("Invalid title format. Title should start with '# '")

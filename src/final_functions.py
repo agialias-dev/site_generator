@@ -1,6 +1,6 @@
 import re, textwrap
 from htmlnode import ParentNode
-from inline_functions import text_node_to_html_node, text_to_textnodes
+from inline_functions import text_node_to_html_node, text_to_textnodes, extract_title
 from textnode import TextNode, TextType
 from block_functions import markdown_to_blocks, BlockType, block_to_block_type
 
@@ -69,3 +69,19 @@ def text_to_children(text):
     textnodes = text_to_textnodes(text)
     htmlnodes = list(map(lambda node : text_node_to_html_node(node), textnodes))
     return htmlnodes
+
+def generate_page(from_path, template_path, dest_path):
+    print(f"Generating page from {from_path} to {dest_path} using {template_path}")
+    markdown_file = open(from_path, "r")
+    markdown = markdown_file.read()
+    markdown_file.close()
+    template_file = open(template_path, "r")
+    template = template_file.read()
+    template_file.close()
+    html = markdown_to_html(markdown).to_html()
+    title = extract_title(from_path)
+    output =template.replace("{{ Title }}", title).replace("{{ Content }}", html)
+    html_file = open(dest_path, "w")
+    html_file.write(output)
+    html_file.close()
+    print(f"Page generated at {dest_path}")

@@ -102,5 +102,23 @@ class TestFinalConversion(unittest.TestCase):
             TextNode(" word and a ", TextType.TEXT), TextNode("code block", TextType.CODE), TextNode(" and an ", TextType.TEXT),
             TextNode("obi wan image", TextType.IMAGE, "https://i.imgur.com/fJRm4Vk.jpeg"), TextNode(" and a ", TextType.TEXT), TextNode("link", TextType.LINK, "https://boot.dev")], nodes)
 
+class TestTitleExtraction(unittest.TestCase):
+    def test_title_extraction(self):
+        text = "/home/agialias/projects/site_generator/content/index.md"
+        title = extract_title(text)
+        self.assertEqual(title, "# Tolkien Fan Club")
+    
+    #def test_title_extraction_no_title(self):
+    #    text = "This is not a title"
+    #    self.assertRaises(ValueError, extract_title, text)
+
+    #def test_title_extraction_h2(self):
+    #    text = "## This is a h2 title"
+    #    self.assertRaises(ValueError, extract_title, text)
+
+    #def test_title_extraction_whitspace(self):
+    #    text = " #  This is a title"
+    #    self.assertRaises(ValueError, extract_title, text)
+
 if __name__ == "__main__":
     unittest.main()
