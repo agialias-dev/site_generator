@@ -14,3 +14,14 @@
 2025-05-19 13:49:55,473 INFO : Entering recursion
 2025-05-19 13:49:55,473 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
 2025-05-19 13:49:55,476 INFO : Task completed.
+2025-05-19 13:56:38,046 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-19 13:56:38,047 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-19 13:56:38,047 INFO : Deleting /home/agialias/projects/site_generator/public/index.html
+2025-05-19 13:56:38,047 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-19 13:56:38,047 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-19 13:56:38,048 INFO : Entering recursion
+2025-05-19 13:56:38,048 INFO : Moving /home/agialias/projects/site_generator/static/images/rivendell.png to /home/agialias/projects/site_generator/public/images
+2025-05-19 13:56:38,049 INFO : Moving /home/agialias/projects/site_generator/static/images/tom.png to /home/agialias/projects/site_generator/public/images
+2025-05-19 13:56:38,050 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-19 13:56:38,052 INFO : Moving /home/agialias/projects/site_generator/static/images/glorfindel.png to /home/agialias/projects/site_generator/public/images
+2025-05-19 13:56:38,052 INFO : Task completed.
