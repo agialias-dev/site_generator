@@ -110,3 +110,89 @@
 2025-05-20 13:36:17,853 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
 2025-05-20 13:36:17,854 INFO : Moving /home/agialias/projects/site_generator/static/images/glorfindel.png to /home/agialias/projects/site_generator/public/images
 2025-05-20 13:36:17,854 INFO : Task completed.
+2025-05-20 13:53:54,920 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-20 13:53:54,921 INFO : Deleting /home/agialias/projects/site_generator/public/blog
+2025-05-20 13:53:54,923 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-20 13:53:54,924 INFO : Deleting /home/agialias/projects/site_generator/public/contact
+2025-05-20 13:53:54,924 INFO : Deleting /home/agialias/projects/site_generator/public/index.html
+2025-05-20 13:53:54,924 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-20 13:53:54,925 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-20 13:53:54,925 INFO : Entering recursion
+2025-05-20 13:53:54,925 INFO : Moving /home/agialias/projects/site_generator/static/images/rivendell.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:53:54,928 INFO : Moving /home/agialias/projects/site_generator/static/images/tom.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:53:54,929 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:53:54,931 INFO : Moving /home/agialias/projects/site_generator/static/images/glorfindel.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:53:54,933 INFO : Task completed.
+2025-05-20 13:55:11,394 INFO : Deleting /home/agialias/projects/site_generator/public/index.css
+2025-05-20 13:55:11,394 INFO : Deleting /home/agialias/projects/site_generator/public/blog
+2025-05-20 13:55:11,395 INFO : Deleting /home/agialias/projects/site_generator/public/images
+2025-05-20 13:55:11,395 INFO : Deleting /home/agialias/projects/site_generator/public/contact
+2025-05-20 13:55:11,395 INFO : Deleting /home/agialias/projects/site_generator/public/index.html
+2025-05-20 13:55:11,395 INFO : Moving /home/agialias/projects/site_generator/static/index.css to /home/agialias/projects/site_generator/public
+2025-05-20 13:55:11,396 INFO : Creating /home/agialias/projects/site_generator/static/images in /home/agialias/projects/site_generator/public
+2025-05-20 13:55:11,412 INFO : Entering recursion
+2025-05-20 13:55:11,412 INFO : Moving /home/agialias/projects/site_generator/static/images/rivendell.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:55:11,414 INFO : Moving /home/agialias/projects/site_generator/static/images/tom.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:55:11,415 INFO : Moving /home/agialias/projects/site_generator/static/images/tolkien.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:55:11,415 INFO : Moving /home/agialias/projects/site_generator/static/images/glorfindel.png to /home/agialias/projects/site_generator/public/images
+2025-05-20 13:55:11,416 INFO : Task completed.
+2025-05-20 14:17:33,698 INFO : Deleting ./public/index.css
+2025-05-20 14:17:33,699 INFO : Deleting ./public/blog
+2025-05-20 14:17:33,701 INFO : Deleting ./public/images
+2025-05-20 14:17:33,701 INFO : Deleting ./public/contact
+2025-05-20 14:17:33,702 INFO : Deleting ./public/index.html
+2025-05-20 14:17:33,702 INFO : Moving ./static/index.css to ./public
+2025-05-20 14:17:33,702 INFO : Creating ./static/images in ./public
+2025-05-20 14:17:33,702 INFO : Entering recursion
+2025-05-20 14:17:33,702 INFO : Moving ./static/images/rivendell.png to ./public/images
+2025-05-20 14:17:33,706 INFO : Moving ./static/images/tom.png to ./public/images
+2025-05-20 14:17:33,707 INFO : Moving ./static/images/tolkien.png to ./public/images
+2025-05-20 14:17:33,709 INFO : Moving ./static/images/glorfindel.png to ./public/images
+2025-05-20 14:17:33,710 INFO : Task completed.
+2025-05-20 14:19:13,352 INFO : Deleting ./public/index.css
+2025-05-20 14:19:13,352 INFO : Deleting ./public/blog
+2025-05-20 14:19:13,353 INFO : Deleting ./public/images
+2025-05-20 14:19:13,353 INFO : Deleting ./public/contact
+2025-05-20 14:19:13,354 INFO : Deleting ./public/index.html
+2025-05-20 14:19:13,354 INFO : Moving ./static/index.css to ./public
+2025-05-20 14:19:13,354 INFO : Creating ./static/images in ./public
+2025-05-20 14:19:13,354 INFO : Entering recursion
+2025-05-20 14:19:13,354 INFO : Moving ./static/images/rivendell.png to ./public/images
+2025-05-20 14:19:13,356 INFO : Moving ./static/images/tom.png to ./public/images
+2025-05-20 14:19:13,356 INFO : Moving ./static/images/tolkien.png to ./public/images
+2025-05-20 14:19:13,357 INFO : Moving ./static/images/glorfindel.png to ./public/images
+2025-05-20 14:19:13,358 INFO : Task completed.
+2025-05-20 14:21:21,393 INFO : Deleting ./public/index.css
+2025-05-20 14:21:21,394 INFO : Deleting ./public/blog
+2025-05-20 14:21:21,395 INFO : Deleting ./public/images
+2025-05-20 14:21:21,396 INFO : Deleting ./public/contact
+2025-05-20 14:21:21,396 INFO : Deleting ./public/index.html
+2025-05-20 14:21:21,396 INFO : Moving ./static/index.css to ./public
+2025-05-20 14:21:21,397 INFO : Creating ./static/images in ./public
+2025-05-20 14:21:21,397 INFO : Entering recursion
+2025-05-20 14:21:21,397 INFO : Moving ./static/images/rivendell.png to ./public/images
+2025-05-20 14:21:21,400 INFO : Moving ./static/images/tom.png to ./public/images
+2025-05-20 14:21:21,402 INFO : Moving ./static/images/tolkien.png to ./public/images
+2025-05-20 14:21:21,403 INFO : Moving ./static/images/glorfindel.png to ./public/images
+2025-05-20 14:21:21,405 INFO : Task completed.
+2025-05-20 14:24:19,556 INFO : Deleting ./public/index.css
+2025-05-20 14:24:19,556 INFO : Deleting ./public/blog
+2025-05-20 14:24:19,556 INFO : Deleting ./public/images
+2025-05-20 14:24:19,557 INFO : Deleting ./public/contact
+2025-05-20 14:24:19,557 INFO : Deleting ./public/index.html
+2025-05-20 14:24:19,557 INFO : Moving ./static/index.css to ./public
+2025-05-20 14:24:19,557 INFO : Creating ./static/images in ./public
+2025-05-20 14:24:19,558 INFO : Entering recursion
+2025-05-20 14:24:19,558 INFO : Moving ./static/images/rivendell.png to ./public/images
+2025-05-20 14:24:19,561 INFO : Moving ./static/images/tom.png to ./public/images
+2025-05-20 14:24:19,563 INFO : Moving ./static/images/tolkien.png to ./public/images
+2025-05-20 14:24:19,565 INFO : Moving ./static/images/glorfindel.png to ./public/images
+2025-05-20 14:24:19,566 INFO : Task completed.
+2025-05-20 14:26:44,807 INFO : Moving ./static/index.css to ./docs
+2025-05-20 14:26:44,811 INFO : Creating ./static/images in ./docs
+2025-05-20 14:26:44,812 INFO : Entering recursion
+2025-05-20 14:26:44,812 INFO : Moving ./static/images/rivendell.png to ./docs/images
+2025-05-20 14:26:44,815 INFO : Moving ./static/images/tom.png to ./docs/images
+2025-05-20 14:26:44,817 INFO : Moving ./static/images/tolkien.png to ./docs/images
+2025-05-20 14:26:44,818 INFO : Moving ./static/images/glorfindel.png to ./docs/images
+2025-05-20 14:26:44,820 INFO : Task completed.

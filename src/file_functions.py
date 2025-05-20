@@ -6,8 +6,9 @@ logging.basicConfig(filename='/home/agialias/projects/site_generator/audit_logs/
                     level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s : %(message)s')
 
-public = '/home/agialias/projects/site_generator/public'
-static = '/home/agialias/projects/site_generator/static'
+public = './public'
+docs = './docs'
+static = './static'
 
 def delete_tree_contents(path):
     print("Emptying the public directory...")

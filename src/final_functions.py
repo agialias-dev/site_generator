@@ -3,6 +3,7 @@ from htmlnode import ParentNode
 from inline_functions import text_node_to_html_node, text_to_textnodes, extract_title
 from textnode import TextNode, TextType
 from block_functions import markdown_to_blocks, BlockType, block_to_block_type
+from main import basepath
 
 def markdown_to_html(markdown):
     blocks = markdown_to_blocks(markdown)
@@ -80,7 +81,7 @@ def generate_page(from_path, template_path, dest_path):
     template_file.close()
     html = markdown_to_html(markdown).to_html()
     title = extract_title(from_path)
-    output =template.replace("{{ Title }}", title).replace("{{ Content }}", html)
+    output =template.replace("{{ Title }}", title).replace("{{ Content }}", html).replace('href="/', f'href="{basepath}').replace('src="/', f'src="{basepath}')
     html_file = open(f"{dest_path}/index.html", "w")
     html_file.write(output)
     html_file.close()
@@ -96,7 +97,6 @@ def generate_pages_recursively(from_dir, template_path, dest_dir):
                 recursive_dest = f"{dest_dir}/{filename}"
                 generate_pages_recursively(recursive_src, template_path, recursive_dest)
             elif (os.path.isfile(source_file_path) or os.path.islink(source_file_path) and source_file_path.endswith(".md")):
-                dest_file = f"{dest_dir}/{filename}"
                 generate_page(source_file_path, template_path, dest_dir)
         except Exception as e:
             print('Failed to generate a HTML page from %s. Reason: %s' % (source_file_path, e))
