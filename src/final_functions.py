@@ -1,4 +1,4 @@
-import re, textwrap
+import re, textwrap, os
 from htmlnode import ParentNode
 from inline_functions import text_node_to_html_node, text_to_textnodes, extract_title
 from textnode import TextNode, TextType
@@ -81,7 +81,22 @@ def generate_page(from_path, template_path, dest_path):
     html = markdown_to_html(markdown).to_html()
     title = extract_title(from_path)
     output =template.replace("{{ Title }}", title).replace("{{ Content }}", html)
-    html_file = open(dest_path, "w")
+    html_file = open(f"{dest_path}/index.html", "w")
     html_file.write(output)
     html_file.close()
-    print(f"Page generated at {dest_path}")
+    print(f"Page generated in: {dest_path}")
+
+def generate_pages_recursively(from_dir, template_path, dest_dir):
+    for filename in os.listdir(from_dir):
+        source_file_path = os.path.join(from_dir, filename)
+        try:
+            if os.path.isdir(source_file_path):
+                os.mkdir(f"{dest_dir}/{filename}")
+                recursive_src = f"{from_dir}/{filename}"
+                recursive_dest = f"{dest_dir}/{filename}"
+                generate_pages_recursively(recursive_src, template_path, recursive_dest)
+            elif (os.path.isfile(source_file_path) or os.path.islink(source_file_path) and source_file_path.endswith(".md")):
+                dest_file = f"{dest_dir}/{filename}"
+                generate_page(source_file_path, template_path, dest_dir)
+        except Exception as e:
+            print('Failed to generate a HTML page from %s. Reason: %s' % (source_file_path, e))
